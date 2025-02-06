@@ -13,7 +13,7 @@ A full-stack web application to manage vehicle services, repairs, components, pr
 4. **Final Price Calculation & Payment Simulation**
    - Calculate the final price for repairs or services based on selected parts, labor, and charges.
 5. **Revenue Graphs**
-   - Visualize daily, monthly, and yearly revenue using charts (Recharts or other libraries).
+   - Visualize daily revenue using charts (Recharts or other libraries).
 
 ## Tech Stack
 
