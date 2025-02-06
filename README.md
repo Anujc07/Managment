@@ -34,7 +34,6 @@ cd vehicle-service-management
 ### 2. Install Backend Dependencies
 
 ```bash
-cd vehicle_service
 pip install -r requirements.txt
 ```
 
@@ -52,7 +51,6 @@ npm install
 ### 5. Run Migrations (vehicle_service)
 
 ```bash
-cd vehicle_service
 python manage.py migrate
 ```
 
@@ -60,7 +58,6 @@ python manage.py migrate
 
 - **Backend**:  
   ```bash
-  cd vehicle_service
   python manage.py runserver
   ```
   The backend will run at `http://127.0.0.1:8000`.
