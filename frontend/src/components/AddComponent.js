@@ -7,10 +7,10 @@ const AddComponent = () => {
   const [price, setPrice] = useState('');
   const [message, setMessage] = useState(''); 
   const [messageType, setMessageType] = useState('');  
-  const [components, setComponents] = useState([]);  // State for components list
+  const [components, setComponents] = useState([]);
 
   useEffect(() => {
-    fetchComponents();  // Fetch components when the component mounts
+    fetchComponents();  
   }, []);
 
   const fetchComponents = async () => {
@@ -32,7 +32,7 @@ const AddComponent = () => {
       setMessageType('success');
       setName('');
       setPrice('');
-      fetchComponents();  // Refresh the list after adding a new component
+      fetchComponents();
     } catch (error) {
       console.error('Error adding component', error);
       setMessage('Failed to add component.');
@@ -45,7 +45,7 @@ const AddComponent = () => {
       await axios.delete(`http://localhost:8000/api/components/${id}/delete/`);
       setMessage('Component Deleted Successfully!');
       setMessageType('success');
-      fetchComponents();  // Refresh the list after deletion
+      fetchComponents();  
     } catch (error) {
       console.error('Error deleting component', error);
       setMessage('Failed to delete component.');
