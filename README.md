@@ -34,25 +34,25 @@ cd vehicle-service-management
 ### 2. Install Backend Dependencies
 
 ```bash
-cd backend
+cd vehicle_service
 pip install -r requirements.txt
 ```
 
 ### 3. Install Frontend Dependencies
 
 ```bash
-cd frontend
+cd vehicle_service
 npm install
 ```
 
 ### 4. Configure Database
 
-- **SQLite**: By default, the project uses SQLite. If you'd like to use PostgreSQL or another database, modify the `DATABASES` setting in `backend/settings.py`.
+- **SQLite**: By default, the project uses SQLite. If you'd like to use PostgreSQL or another database, modify the `DATABASES` setting in `vehicle_service/settings.py`.
 
-### 5. Run Migrations (Backend)
+### 5. Run Migrations (vehicle_service)
 
 ```bash
-cd backend
+cd vehicle_service
 python manage.py migrate
 ```
 
@@ -60,7 +60,7 @@ python manage.py migrate
 
 - **Backend**:  
   ```bash
-  cd backend
+  cd vehicle_service
   python manage.py runserver
   ```
   The backend will run at `http://127.0.0.1:8000`.
