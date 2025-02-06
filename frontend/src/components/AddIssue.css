@@ -39,7 +39,7 @@
 }
 
 .form-select {
-  appearance: none; /* Remove default browser styling */
+  appearance: none;
   background-color: #fff;
   cursor: pointer;
 }
