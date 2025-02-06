@@ -8,7 +8,6 @@ const FinalPrice = () => {
   const [finalPrice, setFinalPrice] = useState(0);
 
   useEffect(() => {
-    // Fetch all vehicles
     axios.get('http://localhost:8000/api/vehicles/')
       .then(response => setVehicles(response.data))
       .catch(error => console.error('Error fetching vehicles:', error));
@@ -23,7 +22,7 @@ const FinalPrice = () => {
       axios.get(`http://localhost:8000/api/issues/${selectedVehicle}/`)
         .then(response => {
             console.log(response.data)
-          setFinalPrice(response.data[0].total_cost);  // Using total_cost from API response
+          setFinalPrice(response.data[0].total_cost); 
         })
         .catch(error => {
           console.error('Error fetching issue data:', error);
