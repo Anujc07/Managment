@@ -21,7 +21,7 @@ const AddVehicle = () => {
       setVehicleId('');
       setModel('');
       setOwnerName('');
-      fetchVehicles(); // Refresh the list after adding
+      fetchVehicles(); 
     } catch (error) {
       console.error('Error adding vehicle', error);
       setMessage('Failed to add vehicle. Please try again.');
