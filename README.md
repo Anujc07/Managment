@@ -64,7 +64,6 @@ python manage.py migrate
 
 - **Frontend**:  
   ```bash
-  cd frontend
   npm start
   ```
   The frontend will run at `http://localhost:3000`.
