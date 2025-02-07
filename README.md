@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ### 3. Install Frontend Dependencies
 
 ```bash
-cd vehicle_service
+cd frontend
 npm install
 ```
 
